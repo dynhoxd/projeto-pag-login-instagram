@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="everything container">
+
+        <img class="imgCellphone" src="./img/instagram-celular_edited.jpg" alt="Instagram App on a phone" class="cellphone">
+
+        <div class="signinOptions">
+            <div class="signin container">
+                <img class="instaLogo" src="./img/instagram-logo.png" alt="Instagram logo">
+                <form class="container" action="">
+                    <input class="inputUser" type="text" placeholder="Phone number, username or e-mail">
+                    <input class="inputPass" type="password" name="" id="" placeholder="Password">
+                    <button disabled>Log In</button>
+                    <p class="or">OR</p>
+                    <a class="loginFacebook" href=""><img src="./img/face.png" alt=""> Log in with Facebook</a>
+                </form>
+
+                <a class="forgotPass" href="">Forgot password?</a>
+            </div>
+            <div class="signup container">Don't have an account?<a href="">Sign Up</a></div>
+            <div class="downloadApp container">
+                <p>Get the app</p>
+                <div class="apps container">
+                    <a href=""><img src="./img/apple-button.png" alt="Apple Store button"></a>
+                    <a href=""><img src="./img/googleplay-button.png" alt="Google Play Store buttom"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let inputUser = document.querySelector(".inputUser")
+        let inputPass = document.querySelector(".inputPass")
+        inputUser.addEventListener("input", buttonStatus)
+        inputPass.addEventListener("input", buttonStatus)
+
+        function buttonStatus(){
+            let button = document.querySelector("button")
+            let inputUser = document.querySelector(".inputUser")
+            let inputPass = document.querySelector(".inputPass")
+
+            if( inputUser.value.length > 5 && inputPass.value.length >= 8){
+                if(button.disabled){
+                    button.disabled = false
+                }
+                button.style.backgroundColor = "rgba(0, 149, 246)"
+            }
+        }
+    </script>
+</body>
+
+</html>

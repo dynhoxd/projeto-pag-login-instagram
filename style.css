@@ -1,0 +1,118 @@
+:root{
+    --grey: rgba(250, 250, 250, 1);
+    --blue: rgba(0, 149, 246, .3);
+    --facebook: #375592de;
+    --grey-border: rgba(128, 128, 128, 0.37);
+    --defaut-height: 600px;
+}
+body{
+    background-color: var(--grey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: .85rem;
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.everything{
+    width: 60%;
+}
+.imgCellphone{
+    height: var(--defaut-height);
+    margin-right: 0;
+    margin-right: 20px;
+}
+.signinOptions{
+    height: var(--defaut-height);
+}
+.signin, .signup, .downloadApp{
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 360px;
+}
+.signin{
+    border: 1px solid var(--grey-border);
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+}
+.instaLogo{
+    width: 190px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+form{
+    flex-direction: column;
+    width: 100%;
+}
+.signin input{
+    background-color: var(--grey);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--grey-border);
+    border-radius: 3px;
+    width: 70%;
+}
+.loginFacebook{
+    color: var(--facebook);
+    text-decoration: none;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.loginFacebook img{
+    height: 1rem;
+    transform: translateY(15%);
+    margin-right: 5px;
+}
+.forgotPass{
+    text-decoration: none;
+    color: var(--facebook);
+    font-size: .85em;
+    margin-bottom: 20px;
+}
+button{
+    width: 76.6%;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid var(--grey-border);
+    border-radius: 3px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.or{
+    color: rgba(128, 128, 128, 0.774);
+    font-weight: bold;
+}
+.signup{
+    height: 50px;
+    background-color: white;
+    border: 1px solid var(--grey-border);
+    margin-bottom: 0%;
+}
+.signup a{
+    margin-left: 8px;
+    color: rgba(0, 149, 246);
+    text-decoration: none;
+}
+.downloadApp{
+    height: 100px;
+    flex-direction: column;
+}
+.downloadApp p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.apps img{
+    height: 40px;
+    margin-right: 10px;
+}
