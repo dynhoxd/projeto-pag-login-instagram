@@ -98,10 +98,12 @@ button{
     background-color: white;
     border: 1px solid var(--grey-border);
     margin-bottom: 0%;
+    padding: 30px;
 }
 .signup a{
-    margin-left: 8px;
+    margin-left: 4px;
     color: rgba(0, 149, 246);
+    font-weight: bold;
     text-decoration: none;
 }
 .downloadApp{
